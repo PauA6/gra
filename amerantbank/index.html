@@ -3,14 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <title>Amerant Bank Arena in Sunrise | Paula Aponte</title>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kranky&family=New+Rocker&family=Oswald:wght@200..700&family=Quintessential&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mystery+Quest&family=Yuji+Mai&display=swap" rel="stylesheet">
 <style type="text/css">
 body {
     margin: 0;
-    background-color: #BAE3E7;
-	 font-family: "Oswald", serif;
+    background-color: lightyellow;
+    font-family: "Oswald", serif;
+    background-image: -webkit-linear-gradient(270deg,rgba(130,166,81,1.00) 0%,rgba(216,189,2,1.00) 35.05%,rgba(255,185,214,1.00) 68.98%,rgba(190,127,255,1.00) 100%);
+    background-image: -moz-linear-gradient(270deg,rgba(130,166,81,1.00) 0%,rgba(216,189,2,1.00) 35.05%,rgba(255,185,214,1.00) 68.98%,rgba(190,127,255,1.00) 100%);
+    background-image: -o-linear-gradient(270deg,rgba(130,166,81,1.00) 0%,rgba(216,189,2,1.00) 35.05%,rgba(255,185,214,1.00) 68.98%,rgba(190,127,255,1.00) 100%);
+    background-image: linear-gradient(180deg,rgba(130,166,81,1.00) 0%,rgba(216,189,2,1.00) 35.05%,rgba(255,185,214,1.00) 68.98%,rgba(190,127,255,1.00) 100%);
 }
 wrapper {
     width: 1366px;
@@ -24,31 +31,75 @@ section {
     background-position: center center;
 }
 nav {
-    background-color: #000000;
+    background-color: hotpink;
 }
 ul {
     padding: 0;
     margin: 0;
+    position: center;
+}
+h1 {
+    font-family: "Yuji Mai", serif;
+    color: lawngreen;
+    padding-left: 40px;
+}
+h2 {
+    color: red;
+    font-family: "Yuji Mai", serif;
+    padding-left: 554px;
+    display: inline-block;
+    width: 209px;
 }
 li {
     color: white;
     display: inline-block;
     padding: 15px 20px;
-    font-family: sans-serif;
+    font-family: "Mystery Quest", system-ui;
 }
-nav ul li:hover  {
-    background-color: red;
+nav ul li:hover {
+    background-color: lightblue;
+    color: #F10D11;
 }
 #home {
     background-image: url(disneyice.jpeg);
 }
+#media {
+    background-image: url("disney2.jpeg");
+}
+#location {
+    background-image: url("disney3.jpeg");
+}
 .map {
-    width: 600px;
+    width: 500px;
     margin-left: 26px;
+    display: inline-block;
 }
 .calendar {
     width: 414px;
     padding-left: 27px;
+}
+.vid {
+    width: 600px;
+    padding-left: 45px;
+}
+.m {
+    visibility: hidden;
+}
+li:hover .m {
+    visibility: visible;
+    ;
+}
+.m2 {
+    visibility: hidden;
+}
+li:hover .m2 {
+    visibility: visible;
+}
+.dd {
+    visibility: hidden;
+}
+li:hover .dd {
+    visibility: visible;
 }
 </style>
 </head>
@@ -58,37 +109,53 @@ nav ul li:hover  {
   <section id="home">
     <nav>
       <ul>
-      <a href="#home">  <li>Home</li></a>
-        <a href="#media"><li>Media</li></a>
-        <a href="#location"><li>Location</li></a>
+        <a href="#home">
+        <li><img src="m.png" class="m" />Home</li>
+        </a> <a href="#media">
+        <li><img src="dd.png" class="dd" />Media</li>
+        </a> <a href="#location">
+        <li><img src="m2.png" class="m2" />Location</li>
+        </a>
       </ul>
     </nav>
     <h1>Welcome to Amerant Bank Arena in Sunrise</h1>
-	  <iframe src="https://calendar.google.com/calendar/embed?src=62feaaa26d3d33175aae28e58c881803ed953e6e2d7a120f3ecc67cd6af9b2f2%40group.calendar.google.com&ctz=Asia%2FManila" width="800" height="600" scrolling="no" frameborder="0" class="calendar" style="border: 0"></iframe>
+    <iframe src="https://calendar.google.com/calendar/embed?src=62feaaa26d3d33175aae28e58c881803ed953e6e2d7a120f3ecc67cd6af9b2f2%40group.calendar.google.com&ctz=Asia%2FManila" width="800" height="600" scrolling="no" frameborder="0" class="calendar" style="border: 0"></iframe>
   </section>
   <section id="media">
     <nav>
       <ul>
-        <a href="#home">  <li>Home</li></a>
-        <a href="#media"><li>Media</li></a>
-        <a href="#location"><li>Location</li></a>
+        <a href="#home">
+        <li><img src="m.png" class="m" />Home</li>
+        </a> <a href="#media">
+        <li><img src="dd.png" class="dd" />Media</li>
+        </a> <a href="#location">
+        <li><img src="m2.png" class="m2" />Location</li>
+        </a>
       </ul>
     </nav>
     <h1>Media</h1>
-	  <iframe width="560" height="315" src="https://www.youtube.com/embed/H7a3i2LmW4o?si=8ey37WzQPYaW4z99" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/wFvgz3A54pI?si=nb_2W4j7zW5EIr-c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" class="vid" allowfullscreen></iframe>
   </section>
   <section id="location">
     <nav>
       <ul>
-        <a href="#home">  <li>Home</li></a>
-        <a href="#media"><li>Media</li></a>
-        <a href="#location"><li>Location</li></a>
+        <a href="#home">
+        <li><img src="m.png" class="m" />Home</li>
+        </a> <a href="#media">
+        <li><img src="dd.png" class="dd" />Media</li>
+        </a> <a href="#location">
+        <li><img src="m2.png" class="m2" />Location</li>
+        </a>
       </ul>
     </nav>
-    <h1>Location</h1>
-	  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3581.1729665120592!2d-80.3255204!3d26.158495799999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9091a5a97312d%3A0x3272bbb9afe950ae!2sAmerant%20Bank%20Arena!5e0!3m2!1sen!2sus!4v1740766779338!5m2!1sen!2sus" width="400" height="300" class="map" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <h1>Location and Contact Us</h1>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3581.1729665120592!2d-80.3255204!3d26.158495799999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9091a5a97312d%3A0x3272bbb9afe950ae!2sAmerant%20Bank%20Arena!5e0!3m2!1sen!2sus!4v1740766779338!5m2!1sen!2sus" width="400" height="300" class="map" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <h2> Contact Us: 
+      <br>
+1 Panther Parkway, Sunrise, FL 33323. <br>
+Next show - March 14-16.</h2>
   </section>
-  <footer>Content for New footer Tag Goes Here</footer>
+  <footer>© 2025, Paula Aponte. This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</footer>
 </wrapper>
 </body>
 </html>
