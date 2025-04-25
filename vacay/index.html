@@ -3,6 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <title>Vacaytravel.com | Paula Aponte, 2025</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Indie+Flower&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shadows+Into+Light&display=swap" rel="stylesheet">
 <style type="text/css">
 body {
     margin: 0;
@@ -20,7 +23,7 @@ wrapper {
     background-color: rgba(255,255,255,0.20);
 }
 footer {
-    font-family: sans-serif;
+   font-family: "Gruppo", sans-serif;
     color: rgba(254,251,251,1.00);
     position: fixed;
     bottom: 0px;
@@ -28,45 +31,80 @@ footer {
     background-color: rgba(5,5,5,0.20);
     font-size: 12px;
 }
+img {
+    width: 175px;
+    height: 150px;
+}
 header {
-    height: 100px;
-    background-color: #BBC411;
+    height: 146px;
+    background-color: #ECF18C;
+}
+.name {
+    width: auto;
+}
+	h2 {
+    font-family: "Montserrat Alternates", sans-serif;
+    color: rgba(55,87,194,1.00);
 }
 .icons {
     width: auto;
     height: 50px;
 }
 #Tabs1 li {
+    font-family: "Indie Flower", cursive;
     text-align: center;
-    background-color: rgba(135,220,183,1.00);
+    background-color: rgba(176,225,204,1.00);
     background-image: none;
     color: rgba(0,0,0,1.00);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     margin-left: 8px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
 }
 #Tabs1 ul {
     background-image: none;
     border: none;
     background-color: transparent;
     color: rgba(0,0,0,1.00);
+    padding-left: 1px;
 }
 #Tabs1 {
     background-image: none;
     border: none;
     background-color: transparent;
     color: rgba(0,0,0,1.00);
+    padding-left: 0px;
+    padding-bottom: 0px;
 }
 #Tabs1 imput {
     margin-left: 36px;
     margin-right: 10px;
+    padding-left: 78px;
+    background-color: rgba(180,229,210,1.00);
 }
 .ui-tabs-nav.ui-helper-clearfix.ui-widget-header .ui-state-default.ui-corner-top a {
 }
 #Tabs1 div {
-    background-color: rgba(136,227,175,0.80);
+    background-color: rgba(180,229,210,1.00);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    padding-left: 32px;
+}
+label {
+    font-family: "Shadows Into Light", cursive;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: bold;
+    padding-left: 21px;
+}
+.submit {
+    background-color: rgba(238,243,145,1.00);
+    padding-left: 7px;
+    margin-left: 29px;
+    border-top-left-radius: 0px;
+    border-spacing: 0px 0px;
 }
 </style>
 <link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
@@ -77,7 +115,7 @@ header {
 </head>
 
 <body>
-<header></header>
+<header><img src="logo.png" alt="" width="337" height="333"><img src="name.png" alt="" width="394" height="96" class="name"></header>
 <wrapper></wrapper>
 <div id="Tabs1">
   <ul>
@@ -93,26 +131,62 @@ header {
     Cruises</a></li>
   </ul>
   <div id="tabs-1">
+<h2>Flights</h2>
 <input name="textfield" type="text" id="textfield" placeholder="Leaving from">
 <input name="textfield2" type="text" id="textfield2" placeholder="Going to">
     <label for="date">From:</label>
     <input type="date" name="date" id="date">
     <label for="date2">To:</label>
     <input type="date" name="date2" id="date2">
-    <input type="submit" name="submit" id="submit" value="Submit">
+    <input name="submit" type="submit" class="submit" value="Submit">
   </div>
 <div id="tabs-2">
-    <p>Content 2</p>
+    
+    <h2>Hotels</h2>
+    <input name="textfield3" type="text" id="textfield3" placeholder="Where to">
+    <label for="date3">
+  Date:</label>
+    <input type="date" name="date3" id="date3">
+	<label for="number">Number:</label>
+    <input name="number" type="number" id="number" placeholder="Guests">
+    <input name="submit2" type="submit" class="submit" value="Submit">
+    
+    
   </div>
-  <div id="tabs-3">
-    <p>Content 3</p>
+<div id="tabs-3">
+  <h2>Cars</h2>
+    
+    <label for="textfield4">Pick up location:</label>
+    <input name="textfield4" type="text" id="textfield4" placeholder="Pick up">
+    <label for="textfield5">Drop off location:</label>
+    <input name="textfield5" type="text" id="textfield5" placeholder="Drop off">
+    <label for="date4">Date:</label>
+    <input type="date" name="date4" id="date4">
+    <label for="time">Pick up time:</label>
+    <input type="time" name="time" id="time">
+    <label for="time2">Drop off time:</label>
+    <input type="time" name="time2" id="time2">
+<input name="submit3" type="submit" class="submit" value="Submit">
+    
+    
   </div>
   <div id="tabs-4">
-    <p>Content 4</p>
+    <h2>Things to do</h2>
+    <input type="text" placeholder="Going to">
+    <input type="date">
+<input name="submit3" type="submit" class="submit" value="Submit">
   </div>
-  <div id="tabs-5">
-    <p>Content 5</p>
-  </div>
+<div id="tabs-5">
+  <h2>Cruises</h2>
+    <input type="text" placeholder="Going To">
+	 <label for="date">Departing date:</label>
+    <input type="date">
+	 <label for="date">Arival date:</label>
+    <input type="date">
+    <label for="number">Nights:</label>
+    <input name="number" type="number" id="number" placeholder="Number">
+<input name="submit3" type="submit" class="submit" value="Submit">
+</div>
 </div>
 <footer><p>© 2025, Paula Aponte. This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p></footer>
 <script type="text/javascript">
